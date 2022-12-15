@@ -1,0 +1,8 @@
+.idea
+.vscode
+.e2e
+.specs
+node_modules
+package-lock.json
+.env
+.test.env
