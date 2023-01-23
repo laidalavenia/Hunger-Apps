@@ -21,11 +21,11 @@ const UrlParser = {
 
   _urlCombiner(splitedUrl) {
     // eslint-disable-next-line no-unused-expressions
-    +(splitedUrl.id ? '/:id' : '') +
-    (splitedUrl.verb ? `/${splitedUrl.verb}` : '');
-    return (splitedUrl.resource ? `/${splitedUrl.resource}` : '/') +
-      (splitedUrl.id ? '/:id' : '') +
-      (splitedUrl.verb ? `/${splitedUrl.verb}` : '');
+    +(splitedUrl.id ? '/:id' : '')
+    + (splitedUrl.verb ? `/${splitedUrl.verb}` : '');
+    return (splitedUrl.resource ? `/${splitedUrl.resource}` : '/')
+      + (splitedUrl.id ? '/:id' : '')
+      + (splitedUrl.verb ? `/${splitedUrl.verb}` : '');
   },
 };
 

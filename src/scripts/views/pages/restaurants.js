@@ -1,5 +1,5 @@
 import TheRestaurantDbSource from '../../data/therestaurantdb-source';
-import {createRestaurantItemTemplate} from '../templates/template-creator';
+import { createRestaurantItemTemplate } from '../templates/template-creator';
 
 const NowPlaying = {
   async render() {

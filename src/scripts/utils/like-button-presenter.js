@@ -1,7 +1,7 @@
-import {createLikeRestaurantButtonTemplate, createUnlikeRestaurantButtonTemplate} from '../views/templates/template-creator';
+import { createLikeRestaurantButtonTemplate, createUnlikeRestaurantButtonTemplate } from '../views/templates/template-creator';
 
 const LikeButtonInitiator = {
-  async init({likeButtonContainer, favoriteMovies, movie}) {
+  async init({ likeButtonContainer, favoriteMovies, movie }) {
     this._likeButtonContainer = likeButtonContainer;
     this._movie = movie;
     this._favoriteMovies = favoriteMovies;
@@ -10,7 +10,7 @@ const LikeButtonInitiator = {
   },
 
   async _renderButton() {
-    const {id} = this._movie;
+    const { id } = this._movie;
 
     if (await this._isMovieExist(id)) {
       this._renderLiked();
